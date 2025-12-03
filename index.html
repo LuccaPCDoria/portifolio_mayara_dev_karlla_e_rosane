@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayara Santos - Design de Interiores</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logoMayara.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container nav__container">
+            <a href="#home" class="nav__logo">
+                <h1>Mayara Santos</h1>
+                <span>Design de Interiores</span>
+            </a>
+            
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+
+            <div class="nav__toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero__container" style="padding-right: 48px;">
+                <div class="hero__content">
+                    <span class="hero__badge">Portfólio 2025</span>
+                    <h2 class="hero__title">Transformando espaços com <em>elegância</em> e <em>funcionalidade</em>.</h2>
+                    <p class="hero__subtitle">Design de Interiores personalizado que reflete sua personalidade e estilo de vida.</p>
+                    <div class="hero__buttons">
+                        <a href="#projetos" class="btn btn--primary">Ver Projetos <i class="fas fa-arrow-right" id="icone-seta"></i></a>
+                        <a href="#contato" class="btn btn--text">Entrar em contato</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="img/177A1136.jpeg" alt="Mayara Santos" class="hero__img">
+                    <div class="hero__shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Sobre a Mayara</h2>
+                    <p class="section__subtitle">Conheça a mente criativa por trás dos projetos</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-item bio">
+                        <h3><b>A Designer</b></h3>
+                        <p>Acredito que um espaço bem desenhado não é apenas bonito; ele é o cenário onde a sua melhor história acontece.</p>
+                        <p style="margin-top: 1rem;">Minha paixão pelo Design de Interiores me move a criar ambientes que vão além da estética: eles promovem bem-estar, funcionalidade impecável e refletem a sua essência.</p>
+                        <p style="margin-top: 1rem;">Meu foco é mergulhar na sua história para transformar o seu espaço em um refúgio acolhedor ou um ambiente comercial inspirador.</p>
+                        <p style="margin-top: 1rem;"><b>Vamos juntos criar espaços que contam a sua história de forma única e inesquecível?</b></p>
+                    </div>
+                    
+                    <div class="bento-item photo">
+                        <img src="img/segundafoto.jpeg" alt="Mayara Santos">
+                    </div>
+
+                    <div class="bento-item skills">
+                        <h3>Habilidades</h3>
+                        <div class="tags-wrapper">
+                            <span class="tag">Criatividade</span>
+                            <span class="tag">SketchUp</span>
+                            <span class="tag">AutoCAD</span>
+                            <span class="tag">Revit</span>
+                            <span class="tag">Promob</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-item interests">
+                        <h3>Inspirações</h3>
+                        <div class="tags-wrapper">
+                            <span class="tag">Fotografia</span>
+                            <span class="tag">Pedalar</span>
+                            <span class="tag">Leitura</span>
+                            <span class="tag">Música</span>
+                            <span class="tag">Cozinhar</span>
+                            <span class="tag">Animais</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Projetos Selecionados</h2>
+                </div>
+                
+                <div class="projetos__grid">
+                    <article class="card-projeto">
+                        <div class="card__image">
+                            <img src="img/casacotipora1.1.png" alt="Casa Cotiporã" class="card__img-bg">
+                            <div class="card__overlay">
+                                <button class="btn-ver-mais" onclick="abrirDetalhes('cotipora')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__tag">Residencial</span>
+                            <h3>Casa Cotiporã</h3>
+                            <br>
+                            <p>Residência Unifamiliar modelada no Revit.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto">
+                        <div class="card__image">
+                            <img src="img/escritorio1.1.png" alt="Escritório" class="card__img-bg">
+                            <div class="card__overlay">
+                                <button class="btn-ver-mais" onclick="abrirDetalhes('escritorio')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__tag">Comercial</span>
+                            <h3>Interiores Escritório</h3>
+                            <br>
+                            <p>Ambientes únicos merecem soluções únicas. Projeto desenvolvido utilizando Sketchup.</p>                            
+                        </div>
+                    </article>
+                    
+                    <article class="card-projeto consultoria">
+                        <div class="card__image">
+                            <img src="img/ambienteplanejadocotipora3.png" alt="Consultoria - Projeto de interiores" class="card__img-bg no-crop">
+                            <div class="card__overlay">
+                                <button class="btn-ver-mais" onclick="abrirDetalhes('consultoria')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__tag">Consultoria</span>
+                            <h3>Projeto de Interiores</h3>
+                            <br>
+                            <p>Intervenção consultiva que inclui briefing detalhado, moodboard, layout funcional e projetos com especificações técnicas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="detalhes-consultoria" class="detalhes-section hidden">
+            <div class="container">
+                <button class="btn-fechar" onclick="fecharDetalhes('consultoria')"><i class="fas fa-arrow-left"></i> Voltar</button>
+                <h2>Projeto de Interiores</h2>
+                <div class="modern-carousel">
+                    <img src="img/ambienteplanejadocotipora3.png" alt="Consultoria 1">
+                    <img src="img/banheiro1.png" alt="Consultoria 2">   
+                </div>
+                <p>Consultoria completa com estudo de layout, proposta de materiais e sugestão de mobiliário. Oferecemos um plano personalizado para transformar seu ambiente com soluções funcionais e estéticas.</p>
+            </div>
+        </section>
+
+        <section id="detalhes-cotipora" class="detalhes-section hidden">
+            <div class="container">
+                <button class="btn-fechar" onclick="fecharDetalhes('cotipora')"><i class="fas fa-arrow-left"></i> Voltar</button>
+                <h2>Casa Cotiporã</h2>
+                <div class="modern-carousel">
+                    <img src="img/casacotipora1.1.png" alt="Casa 1">
+                    <img src="img/casacotipora2.1.png" alt="Casa 2">
+                </div>
+                <p>Neste projeto, utilizamos a modelagem digital avançada com o Revit para garantir que cada detalhe seja executado com precisão.</p> 
+                <p>O estudo completo desta residência unifamiliar, desde a topografia até a cobertura, assegura que a obra será fiel ao nosso planejamento, trazendo a você segurança e previsibilidade total sobre o resultado final.</p>
+            </div>
+        </section>
+
+        <section id="detalhes-escritorio" class="detalhes-section hidden">
+            <div class="container">
+                <button class="btn-fechar" onclick="fecharDetalhes('escritorio')"><i class="fas fa-arrow-left"></i> Voltar</button>
+                <h2>Escritório Comercial</h2>
+                <div class="modern-carousel">
+                    <img src="img/escritorio1.1.png" alt="Office 1">
+                    <img src="img/escritório 2.1.png" alt="Office 2">
+                </div>
+                <p>Este projeto de interiores teve como missão desenvolver um layout que pudesse equilibrar a concentração individual e a possibilidade de colaboração para duas estações de trabalho.
+                <p>O planejamento foi focado em ergonomia e funcionalidade, garantindo que cada decisão de design servisse à produtividade diária. O resultado é um escritório que vai além da estética profissional, oferecendo um ambiente calmo e inspirador, onde o bem-estar é parte essencial da rotina.</p> 
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container contato__container">
+                <div class="contato__card">
+                    <h2 class="section__title">Vamos conversar?</h2>
+                    <p>Transforme suas ideias em realidade.</p>
+                    
+                    <div class="contato__grid">
+                        <div class="contato__infos">
+                            <a href="#" class="contato-link">
+                                <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                                <span>mayara.santos45@gmail.com</span>
+                            </a>
+                            <a href="#" class="contato-link">
+                                <div class="icon-circle"><i class="fas fa-phone"></i></div>
+                                <span>(83) 989001-3449</span>
+                            </a>
+                        </div>
+                        <form class="contato__form">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                            <button type="submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__brand">
+                <h3>Mayara Santos</h3>
+                <p>Design de Interiores</p>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+            <div class="footer__copy">
+                <p>&copy; 2025 K.R.tech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
